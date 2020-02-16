@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue"
+    tools:context=".MainActivity">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="226dp"
+        android:layout_height="198dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
+        android:layout_marginBottom="484dp"
+        android:src="@drawable/musicnote"
+        app:civ_border_color="#000000" />
+
+
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="174dp"
+        android:layout_marginRight="174dp"
+        android:layout_marginBottom="319dp"
+        android:background="@drawable/play" />
+
+    <Button
+        android:id="@+id/btn_pause"
+        android:layout_width="82dp"
+        android:layout_height="70dp"
+        android:layout_alignBottom="@+id/btn_play"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginBottom="6dp"
+        android:layout_toStartOf="@+id/btn_play"
+        android:layout_toLeftOf="@+id/btn_play"
+        android:background="@drawable/pause" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="79dp"
+        android:layout_height="81dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:layout_marginBottom="318dp"
+        android:background="@drawable/stop" />
+
+</RelativeLayout>
